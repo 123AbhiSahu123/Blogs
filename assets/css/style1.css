@@ -1,0 +1,441 @@
+* body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    padding: 10px;
+}
+
+
+.design1-card {
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.image-wrap {
+    position: relative;
+}
+
+.image-wrap img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    clip-path: polygon(56.289% 0%, 56.289% 0%, 58.236% 0.189%, 60.082% 0.735%, 61.804% 1.609%, 63.377% 2.781%, 64.775% 4.222%, 65.975% 5.902%, 66.951% 7.79%, 67.679% 9.859%, 68.133% 12.077%, 68.291% 14.415%, 68.291% 16.649%, 68.291% 16.649%, 68.406% 18.375%, 68.742% 20.011%, 69.279% 21.538%, 69.999% 22.932%, 70.885% 24.171%, 71.917% 25.235%, 73.077% 26.1%, 74.348% 26.745%, 75.711% 27.148%, 77.148% 27.287%, 89.814% 27.287%, 89.814% 27.287%, 91.466% 27.447%, 93.034% 27.911%, 94.495% 28.653%, 95.83% 29.648%, 97.017% 30.871%, 98.035% 32.296%, 98.863% 33.899%, 99.481% 35.654%, 99.867% 37.537%, 100% 39.521%, 100% 100%, 38.22% 100%, 38.22% 100%, 36.431% 99.827%, 34.734% 99.325%, 33.152% 98.522%, 31.707% 97.445%, 30.422% 96.121%, 29.32% 94.577%, 28.423% 92.842%, 27.754% 90.942%, 27.337% 88.904%, 27.192% 86.755%, 27.192% 82.872%, 27.192% 82.872%, 27.076% 81.147%, 26.741% 79.51%, 26.204% 77.983%, 25.483% 76.589%, 24.598% 75.35%, 23.566% 74.287%, 22.405% 73.421%, 21.134% 72.776%, 19.772% 72.373%, 18.335% 72.234%, 8.857% 72.234%, 8.857% 72.234%, 7.421% 72.095%, 6.058% 71.692%, 4.787% 71.047%, 3.626% 70.182%, 2.594% 69.118%, 1.709% 67.879%, 0.989% 66.485%, 0.452% 64.958%, 0.116% 63.321%, 0% 61.596%, 0% 10.638%, 0% 10.638%, 0.116% 8.913%, 0.452% 7.276%, 0.989% 5.749%, 1.709% 4.355%, 2.594% 3.116%, 3.626% 2.053%, 4.787% 1.187%, 6.058% 0.542%, 7.421% 0.139%, 8.857% 0%, 56.289% 0%);
+}
+
+.icon-circle {
+    position: absolute;
+    top: 0px;
+    right: 14%;
+    width: 50px;
+    height: 50px;
+    background: #ff6a2b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle img {
+    position: relative;
+}
+
+.icon-circle .number {
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    color: #dfe6ee;
+    font-size: 42px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px #cfd8e3;
+}
+
+.column {
+    padding: 6px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h3 {
+    margin: 10px 0;
+    color: #0b2b40;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.content p {
+    color: #6c7a89;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.read-more {
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    color: #0b2b40;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.read-more span {
+    margin-left: 6px;
+    font-size: 18px;
+}
+
+@media (max-width:1400px) {
+    .icon-circle {
+        right: 10%;
+    }
+
+    .number {
+        left: 8%;
+    }
+}
+
+
+/* desktop */
+@media (max-width: 1200px) {
+    .icon-circle {
+        right: 6%;
+    }
+
+    .number {
+        left: 8%;
+        top: 70%;
+        font-size: 30px;
+    }
+
+    .content h3 {
+        font-size: 1.00rem;
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+}
+
+
+/* Tablet */
+@media(max-width:990px) {
+    .design1-card {
+        flex: 1 1 calc(50% - 30px);
+    }
+
+    .icon-circle {
+        right: 8%;
+    }
+
+    .number {
+        left: 8%;
+        top: 74%
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 12px
+    }
+}
+
+/* mobile */
+@media (max-width:576px) {
+    body {
+        overflow-x: hidden;
+        padding: 0%;
+    }
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0%
+    }
+
+    .design1-card {
+        width: 100%;
+
+    }
+
+    .image-wrap {
+        height: 200px;
+        border-bottom-left-radius: 35px;
+    }
+
+    .icon-circle {
+        right: 8%;
+        top: 3%;
+        height: 40px;
+        width: 40px;
+    }
+
+    .number {
+        font-size: 36px;
+        left: 7%;
+        top: 70%;
+    }
+
+    .content h3 {
+        font-size: 13px;
+
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 0%;
+    }
+
+}
+
+@media (max-width:450px){
+     .icon-circle {
+        right: 8%;
+        top: 3%;
+        height: 40px;
+        width: 40px;
+    }
+
+    .number {
+        font-size: 36px;
+        left: 3%;
+        top: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    padding: 10px;
+}
+
+
+.design1-card {
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.image-wrap {
+    position: relative;
+}
+
+.image-wrap img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    clip-path: polygon(56.289% 0%, 56.289% 0%, 58.236% 0.189%, 60.082% 0.735%, 61.804% 1.609%, 63.377% 2.781%, 64.775% 4.222%, 65.975% 5.902%, 66.951% 7.79%, 67.679% 9.859%, 68.133% 12.077%, 68.291% 14.415%, 68.291% 16.649%, 68.291% 16.649%, 68.406% 18.375%, 68.742% 20.011%, 69.279% 21.538%, 69.999% 22.932%, 70.885% 24.171%, 71.917% 25.235%, 73.077% 26.1%, 74.348% 26.745%, 75.711% 27.148%, 77.148% 27.287%, 89.814% 27.287%, 89.814% 27.287%, 91.466% 27.447%, 93.034% 27.911%, 94.495% 28.653%, 95.83% 29.648%, 97.017% 30.871%, 98.035% 32.296%, 98.863% 33.899%, 99.481% 35.654%, 99.867% 37.537%, 100% 39.521%, 100% 100%, 38.22% 100%, 38.22% 100%, 36.431% 99.827%, 34.734% 99.325%, 33.152% 98.522%, 31.707% 97.445%, 30.422% 96.121%, 29.32% 94.577%, 28.423% 92.842%, 27.754% 90.942%, 27.337% 88.904%, 27.192% 86.755%, 27.192% 82.872%, 27.192% 82.872%, 27.076% 81.147%, 26.741% 79.51%, 26.204% 77.983%, 25.483% 76.589%, 24.598% 75.35%, 23.566% 74.287%, 22.405% 73.421%, 21.134% 72.776%, 19.772% 72.373%, 18.335% 72.234%, 8.857% 72.234%, 8.857% 72.234%, 7.421% 72.095%, 6.058% 71.692%, 4.787% 71.047%, 3.626% 70.182%, 2.594% 69.118%, 1.709% 67.879%, 0.989% 66.485%, 0.452% 64.958%, 0.116% 63.321%, 0% 61.596%, 0% 10.638%, 0% 10.638%, 0.116% 8.913%, 0.452% 7.276%, 0.989% 5.749%, 1.709% 4.355%, 2.594% 3.116%, 3.626% 2.053%, 4.787% 1.187%, 6.058% 0.542%, 7.421% 0.139%, 8.857% 0%, 56.289% 0%);
+}
+
+.icon-circle {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #ff6a2b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle img {
+    position: relative;
+}
+
+.icon-circle .number {
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    color: #dfe6ee;
+    font-size: 42px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px #cfd8e3;
+}
+
+.column {
+    padding: 6px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h3 {
+    margin: 10px 0;
+    color: #0b2b40;
+    font-weight: 700;
+}
+
+.content p {
+    color: #6c7a89;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.read-more {
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    color: #0b2b40;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.read-more span {
+    margin-left: 6px;
+    font-size: 18px;
+} */
+
+/* desktop */
+/* @media (max-width: 1200px) {
+    .icon-circle {
+        right: 20px;
+    }
+
+    .number {
+        left: 10px;
+        font-size: 30px;
+    }
+
+    .content h3 {
+        font-size: 1.00rem;
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+   
+} */
+
+
+/* Tablet */
+/* @media(max-width:990px) {
+    .design1-card {
+        flex: 1 1 calc(50% - 30px);
+    }
+
+    .icon-circle {
+        right: 21px;
+    }
+
+    .number {
+        left: 12px;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 12px
+    }
+}*/
+
+/* mobile */
+/* @media (max-width:576px) {
+    body {
+        overflow-x: hidden;
+        padding: 0%;
+    }
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0%
+    }
+
+    .design1-card {
+        width: 100%;
+
+    }
+
+    .image-wrap {
+        height: 200px;
+        border-bottom-left-radius: 35px;
+    }
+
+    .icon-circle {
+        right: 10px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .number {
+        font-size: 36px;
+        left: 0px;
+    }
+
+    .content h3 {
+        font-size: 12px;
+
+    }
+
+    .content p {
+        font-size: 10px;
+    }
+
+    .container {
+        padding: 0%;
+    }
+
+} */

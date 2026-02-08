@@ -1,23 +1,23 @@
-h2 {
+.subheading {
     background-color: gray;
     color: black;
     text-align: center;
     padding: 20px;
 }
-p {
+.head-line {
 
     background-color: aqua;
     color: white;
     text-align: center;
     padding: 10px;
 }
-p:hover {
+.head-line:hover {
     background-color: blueviolet;
 }
-h2:hover {
+.subheading:hover {
     background-color: brown;
 }
-h1 {
+.heading {
     color: black;
     text-align: center;
     text-decoration: double;

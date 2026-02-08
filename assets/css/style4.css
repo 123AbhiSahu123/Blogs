@@ -1,0 +1,405 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 0;
+}
+
+
+.abhi-process {
+    width: 100%;
+    position: relative;
+}
+
+.abhi-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.abhi-content {
+    position: relative;
+    padding: 30px;
+    left: 0px;
+    bottom: 50px;
+    width: 90%;
+    float: right;
+    background: white;
+    border-right: #ea8706 solid 5px;
+}
+
+
+.abhi-content::before {
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: #ea8706;
+}
+
+.abhi-content::after {
+    content: "";
+    position: absolute;
+    left: 101%;
+    top: 74%;
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 16px solid hsl(31, 68%, 32%);
+}
+
+.abhi-content h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.abhi-content p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.abhi-content a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+    .abhi-content {
+        width: 330px;
+    }
+
+    .abhi-content::after {
+        left: 101%;
+        top: 74%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .abhi-content {
+        width: 275px;
+
+    }
+
+    .abhi-content::after {
+        left: 275px;
+        top: 173px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .abhi-content {
+        width: 92%;
+    }
+
+    .abhi-content::after {
+        left: 309px;
+        top: 74%;
+    }
+}
+
+@media (max-width:768px) {
+    .abhi-content {
+        width: 200px;
+    }
+
+    .abhi-content::after {
+        left: 200px;
+        top: 78%;
+    }
+}
+
+@media (min-width:491px) and (max-width: 575.98px) {
+
+    .abhi-content {
+        width: 90%;
+        max-width: 440px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .abhi-content::after {
+        width: 15px;
+        height: 10px;
+        left: 101.2%;
+        top: 68%;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+        /* background: black; */
+    }
+
+    .abhi-content h3 {
+        font-size: 14px;
+    }
+
+    .abhi-content p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 491px) {
+    body{
+        padding: 0;
+    }
+    .abhi-content {
+        width: 85%;
+        max-width: 440px;
+        /* margin: 0 auto; */
+        position: relative;
+    }
+
+    .abhi-content::after {
+        width: 15px;
+        height: 10px;
+        left: 101.2%;
+        top: 68%;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
+
+    .abhi-content h3 {
+        font-size: 14px;
+    }
+
+    .abhi-content p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 454px) {
+    .abhi-content {
+        width: 85%;
+        max-width: 440px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .abhi-content::after {
+        width: 15px;
+        height: 10px;
+        left: 101.7%;
+        top: 70%;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
+
+    .abhi-content h3 {
+        font-size: 14px;
+    }
+
+    .abhi-content p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:360px) {
+    .abhi-content::after {
+        width: 15px;
+        height: 10px;
+        left: 102.2%;
+        top: 72.5%;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 0;
+}
+
+
+.abhi-process {
+    width: 100%;
+    position: relative;
+}
+
+.abhi-img img {
+    width: 100%;
+}
+
+.abhi-content {
+    position: relative;
+    padding: 30px;
+    left: 0px;
+    bottom: 50px;
+    width: 85%;
+    float: right;
+    background: white;
+    border-right: #ea8706 solid 5px;
+}
+
+
+.abhi-content::before {
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: #ea8706;
+}
+
+.abhi-content::after {
+    content: "";
+    position: absolute;
+    left: 354px;
+    top: 74%;
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 16px solid hsl(31, 68%, 32%);
+}
+
+.abhi-content h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.abhi-content p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.abhi-content a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+    .abhi-content::after {
+        left: 303px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .abhi-content {
+        width: 240px;
+
+    }
+
+    .abhi-content::after {
+        left: 240px;
+        top: 173px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .abhi-content {
+        width: 276px;
+    }
+
+    .abhi-content::after {
+        left: 276px;
+        top: 174px;
+    }
+}
+
+@media (max-width:768px) {
+    .abhi-content {
+        width: 200px;
+    }
+
+    .abhi-content::after {
+        left: 200px;
+        top: 78%;
+    }
+}
+
+@media (min-width:491px) and (max-width: 575.98px) {
+
+    .abhi-content {
+        width: 90%;
+        max-width: 440px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .abhi-content::after {
+        left: 376px;
+        top: 153px;
+    }
+
+    .abhi-content h3 {
+        font-size: 14px;
+    }
+
+    .abhi-content p {
+        font-size: 10px;
+    }
+
+
+}
+
+@media (min-width:392px) and (max-width: 491px) {
+
+    .abhi-content {
+        width: 85%;
+        max-width: 440px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .abhi-content::after {
+        left: 245px;
+        top: 173px;
+    }
+
+    .abhi-content h3 {
+        font-size: 14px;
+    }
+
+    .abhi-content p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 392px) {
+
+
+    .abhi-content {
+        width: 85%;
+        max-width: 440px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .abhi-content::after {
+        left: 231px;
+        top: 174px;
+    }
+
+    .abhi-content h3 {
+        font-size: 14px;
+    }
+
+    .abhi-content p {
+        font-size: 10px;
+    }
+} */
