@@ -1,0 +1,489 @@
+.boxes {
+    position: relative;
+    right: 140px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* IMAGE */
+.pro-img {
+    width: 42%;
+    z-index: 2;
+
+}
+
+.pro-img img {
+    position: relative;
+    right: -300px;
+    width: 65%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 22px;
+    clip-path: polygon(0% 9.038%, 0% 9.038%, 0.132% 7.395%, 0.513% 5.858%, 1.116% 4.449%, 1.918% 3.192%, 2.893% 2.11%, 4.017% 1.227%, 5.265% 0.565%, 6.612% 0.149%, 8.032% 0%, 9.502% 0.143%, 52.921% 8.804%, 93.208% 16.086%, 93.208% 16.086%, 94.349% 16.388%, 95.417% 16.86%, 96.401% 17.487%, 97.289% 18.254%, 98.071% 19.148%, 98.736% 20.154%, 99.272% 21.257%, 99.669% 22.443%, 99.915% 23.697%, 99.999% 25.005%, 99.999% 76.884%, 99.999% 76.884%, 99.914% 78.202%, 99.664% 79.466%, 99.261% 80.66%, 98.716% 81.769%, 98.042% 82.779%, 97.249% 83.674%, 96.349% 84.441%, 95.352% 85.063%, 94.272% 85.528%, 93.118% 85.819%, 9.283% 99.893%, 9.283% 99.893%, 7.835% 99.992%, 6.441% 99.81%, 5.122% 99.369%, 3.904% 98.694%, 2.809% 97.805%, 1.86% 96.727%, 1.081% 95.48%, 0.496% 94.088%, 0.128% 92.574%, 0% 90.959%, 0% 9.038%)
+}
+
+/* CONTENT BOX */
+.pro-data {
+    position: relative;
+    width: 55%;
+    height: auto;
+    background: #accde4;
+    padding: 80px 70px;
+    margin-left: -70px;
+    /* overlap */
+    border-radius: 40px;
+    clip-path: polygon(100% 6.865%, 100% 6.865%, 99.876% 5.593%, 99.52% 4.405%, 98.957% 3.321%, 98.209% 2.358%, 97.301% 1.534%, 96.258% 0.869%, 95.102% 0.379%, 93.859% 0.084%, 92.551% 0.002%, 91.203% 0.151%, 47.079% 8.929%, 5.919% 16.348%, 5.919% 16.348%, 4.918% 16.598%, 3.984% 16.971%, 3.125% 17.455%, 2.351% 18.04%, 1.671% 18.715%, 1.094% 19.471%, 0.629% 20.297%, 0.286% 21.182%, 0.073% 22.116%, -0% 23.088%, -0% 78.832%, -0% 78.832%, 0.074% 79.813%, 0.291% 80.756%, 0.641% 81.648%, 1.115% 82.479%, 1.702% 83.239%, 2.394% 83.916%, 3.18% 84.5%, 4.052% 84.981%, 4.999% 85.347%, 6.013% 85.588%, 91.434% 99.89%, 91.434% 99.89%, 92.759% 99.998%, 94.04% 99.884%, 95.254% 99.567%, 96.379% 99.065%, 97.392% 98.394%, 98.271% 97.572%, 98.994% 96.618%, 99.538% 95.548%, 99.881% 94.381%, 100% 93.134%, 100% 6.865%);
+}
+
+/* TEXT */
+.pro-data h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #1a1a1a;
+    padding-left: 25%;
+}
+
+.pro-data p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    padding-left: 25%;
+}
+
+/* BUTTON */
+.pro-data .btn-read {
+    position: relative;
+    background: #1bb3b3;
+    color: #fff;
+    border: none;
+    right: -140px;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media (max-width:1400px) {
+    .pro-data {
+        width: 60%;
+    }
+
+    .pro-data h3 {
+        font-size: 25px;
+        padding-left: 30%;
+    }
+
+    .pro-data p {
+        font-size: 16px;
+        padding-left: 30%;
+    }
+
+    .pro-data .btn-read {
+        right: -160px;
+    }
+}
+
+@media (max-width:1200px) {
+    .boxes {
+        right: 100px;
+    }
+
+    .pro-data {
+        width: 55%;
+        height: 420px;
+    }
+
+    .pro-img img {
+        right: -215px;
+        height: 260px;
+    }
+
+    .pro-data h3 {
+        font-size: 20px;
+        padding-left: 30%;
+    }
+
+    .pro-data p {
+        font-size: 14px;
+        padding-left: 30%;
+    }
+
+    .pro-data .btn-read {
+        right: -110px;
+    }
+}
+
+@media (max-width:992px) {
+    .boxes {
+        right: 75px;
+    }
+
+    .pro-data {
+        width: 65%;
+        height: 350px;
+    }
+
+    .pro-img img {
+        right: -120px;
+        height: 230px;
+    }
+
+    .pro-data h3 {
+        font-size: 18px;
+        padding-left: 12%;
+    }
+
+    .pro-data p {
+        font-size: 12px;
+        padding-left: 12%;
+    }
+
+    .pro-data .btn-read {
+        right: -36px;
+        padding: 2px 2px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .boxes {
+        right: 45px;
+    }
+
+    .pro-data {
+        padding: 40px 68px;
+        width: 70%;
+        height: 250px;
+    }
+
+    .pro-img img {
+        right: -50px;
+        height: 180px;
+    }
+
+    .pro-data h3 {
+        margin-bottom: 0;
+        font-size: 14px;
+        padding-left: 0%;
+    }
+
+    .pro-data p {
+        margin-bottom: 0;
+        font-size: 12px;
+        padding-left: 0%;
+    }
+
+    .pro-data .btn-read {
+        right: 0px;
+        font-size: 10px;
+        padding: 2px 2px;
+    }
+}
+
+@media (max-width: 576px) {
+    .boxes {
+        right: 10px;
+    }
+
+    .pro-data {
+        padding: 30px 60px;
+        width: 80%;
+        height: 450px;
+    }
+
+    .pro-img img {
+        right: -15%;
+        height: 190px;
+    }
+
+    .pro-data h3 {
+        margin-top: 50px;
+        margin-bottom: 2px;
+        font-size: 16px;
+        padding-left: 0%;
+    }
+
+    .pro-data p {
+        margin-bottom: 1px;
+        font-size: 14px;
+        padding-left: 0%;
+    }
+
+    .pro-data .btn-read {
+        right: 0px;
+        font-size: 10px;
+        padding: 2px 2px;
+    }
+}
+
+@media (max-width: 390px) {
+    .pro-img img {
+        display: none;
+    }
+
+    .pro-data {
+        padding: 65px 10px;
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .boxes {
+    position: relative;
+    right: 140px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+} */
+
+/* IMAGE */
+/* .pro-img {
+    width: 42%;
+    z-index: 2;
+
+}
+
+.pro-img img {
+    position: relative;
+    right: -300px;
+    width: 65%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 22px;
+    clip-path: polygon(0% 9.038%, 0% 9.038%, 0.132% 7.395%, 0.513% 5.858%, 1.116% 4.449%, 1.918% 3.192%, 2.893% 2.11%, 4.017% 1.227%, 5.265% 0.565%, 6.612% 0.149%, 8.032% 0%, 9.502% 0.143%, 52.921% 8.804%, 93.208% 16.086%, 93.208% 16.086%, 94.349% 16.388%, 95.417% 16.86%, 96.401% 17.487%, 97.289% 18.254%, 98.071% 19.148%, 98.736% 20.154%, 99.272% 21.257%, 99.669% 22.443%, 99.915% 23.697%, 99.999% 25.005%, 99.999% 76.884%, 99.999% 76.884%, 99.914% 78.202%, 99.664% 79.466%, 99.261% 80.66%, 98.716% 81.769%, 98.042% 82.779%, 97.249% 83.674%, 96.349% 84.441%, 95.352% 85.063%, 94.272% 85.528%, 93.118% 85.819%, 9.283% 99.893%, 9.283% 99.893%, 7.835% 99.992%, 6.441% 99.81%, 5.122% 99.369%, 3.904% 98.694%, 2.809% 97.805%, 1.86% 96.727%, 1.081% 95.48%, 0.496% 94.088%, 0.128% 92.574%, 0% 90.959%, 0% 9.038%)
+} */
+
+/* CONTENT BOX */
+/* .pro-data {
+    position: relative;
+    width: 55%;
+    height: auto;
+    background: #accde4;
+    padding: 80px 70px;
+    margin-left: -70px;
+     border-radius: 40px;
+    clip-path: polygon(100% 6.865%, 100% 6.865%, 99.876% 5.593%, 99.52% 4.405%, 98.957% 3.321%, 98.209% 2.358%, 97.301% 1.534%, 96.258% 0.869%, 95.102% 0.379%, 93.859% 0.084%, 92.551% 0.002%, 91.203% 0.151%, 47.079% 8.929%, 5.919% 16.348%, 5.919% 16.348%, 4.918% 16.598%, 3.984% 16.971%, 3.125% 17.455%, 2.351% 18.04%, 1.671% 18.715%, 1.094% 19.471%, 0.629% 20.297%, 0.286% 21.182%, 0.073% 22.116%, -0% 23.088%, -0% 78.832%, -0% 78.832%, 0.074% 79.813%, 0.291% 80.756%, 0.641% 81.648%, 1.115% 82.479%, 1.702% 83.239%, 2.394% 83.916%, 3.18% 84.5%, 4.052% 84.981%, 4.999% 85.347%, 6.013% 85.588%, 91.434% 99.89%, 91.434% 99.89%, 92.759% 99.998%, 94.04% 99.884%, 95.254% 99.567%, 96.379% 99.065%, 97.392% 98.394%, 98.271% 97.572%, 98.994% 96.618%, 99.538% 95.548%, 99.881% 94.381%, 100% 93.134%, 100% 6.865%);
+} */
+
+/* TEXT */
+/* .pro-data h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #1a1a1a;
+    padding-left: 25%;
+} */
+
+/* .pro-data p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    padding-left: 25%;
+} */
+
+/* BUTTON */
+/* .pro-data .btn-read {
+    position: relative;
+    background: #1bb3b3;
+    color: #fff;
+    border: none;
+    right: -140px;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media (max-width:1400px) {
+    .pro-data {
+        width: 60%;
+    }
+
+    .pro-data h3 {
+        font-size: 25px;
+        padding-left: 30%;
+    }
+
+    .pro-data p {
+        font-size: 16px;
+        padding-left: 30%;
+    }
+
+    .pro-data .btn-read {
+        right: -160px;
+    }
+}
+
+@media (max-width:1200px) {
+    .boxes {
+        right: 100px;
+    }
+
+    .pro-data {
+        width: 55%;
+        height: 420px;
+    }
+
+    .pro-img img {
+        right: -215px;
+        height: 260px;
+    }
+
+    .pro-data h3 {
+        font-size: 20px;
+        padding-left: 30%;
+    }
+
+    .pro-data p {
+        font-size: 14px;
+        padding-left: 30%;
+    }
+
+    .pro-data .btn-read {
+        right: -110px;
+    }
+}
+
+@media (max-width:992px) {
+    .boxes {
+        right: 75px;
+    }
+
+    .pro-data {
+        width: 65%;
+        height: 350px;
+    }
+
+    .pro-img img {
+        right: -120px;
+        height: 230px;
+    }
+
+    .pro-data h3 {
+        font-size: 18px;
+        padding-left: 12%;
+    }
+
+    .pro-data p {
+        font-size: 12px;
+        padding-left: 12%;
+    }
+
+    .pro-data .btn-read {
+        right: -36px;
+        padding: 2px 2px;
+    }
+} */
+
+/* Responsive */
+/* @media (max-width: 768px) {
+    .boxes {
+        right: 45px;
+    }
+
+    .pro-data {
+        padding: 40px 68px;
+        width: 70%;
+        height: 220px;
+    }
+
+    .pro-img img {
+        right: -60px;
+        height: 130px;
+    }
+
+    .pro-data h3 {
+        margin-bottom: 0;
+        font-size: 14px;
+        padding-left: 0%;
+    }
+
+    .pro-data p {
+        margin-bottom: 0;
+        font-size: 10px;
+        padding-left: 0%;
+    }
+
+    .pro-data .btn-read {
+        right: 0px;
+        font-size: 10px;
+        padding: 2px 2px;
+    }
+}
+
+@media (max-width: 576px) {
+    .boxes {
+        right: 10px;
+    }
+
+    .pro-data {
+        padding: 30px 60px;
+        width: 65%;
+        height: 280px;
+    }
+
+    .pro-img img {
+        right: -15%;
+        height: 100px;
+    }
+
+    .pro-data h3 {
+        margin-bottom: 2px;
+        font-size: 14px;
+        padding-left: 0%;
+    }
+
+    .pro-data p {
+        margin-bottom: 1px;
+        font-size: 10px;
+        padding-left: 0%;
+    }
+
+    .pro-data .btn-read {
+        right: 0px;
+        font-size: 10px;
+        padding: 2px 2px;
+    }
+}
+
+@media (max-width: 390px) {
+    .pro-img img {
+        right: -25px;
+        height: 200px;
+    }
+
+    .pro-data {
+        padding: 50px 75px;
+        width: 75%;
+       height: 350px;
+    }
+} */

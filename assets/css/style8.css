@@ -1,0 +1,730 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6faf8;
+}
+
+
+/* main layout */
+.d1-mindbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+/* left content */
+.d1-mindcontent {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+}
+
+.tag {
+    position: relative;
+    right: 0px;
+    top: -10px;
+    font-size: 30px;
+    color: #3ba57c;
+}
+
+.m2 {
+    position: relative;
+    padding-left: 10px;
+    font-size: 26px;
+    margin: 0;
+}
+
+/* vertical line */
+.m2::before {
+    content: "";
+    position: absolute;
+    left: 195px;
+    top: 20px;
+    height: 80%;
+    width: 2px;
+    background: #3ba57c;
+}
+
+/* icon circle */
+.m2::after {
+    content: "\f6c4";
+    font-family: "bootstrap-icons";
+    position: absolute;
+    left: 60px;
+    top: 75%;
+    transform: translateY(-50%);
+    background: #e6f5ee;
+    color: #3ba57c;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.m2 span {
+    color: #3ba57c;
+}
+
+.d1-mindcontent h2 {
+    position: relative;
+    right: 10px;
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.d1-mindcontent h2 span {
+    color: #3ba57c;
+}
+
+.d1-mindcontent .m1 {
+    position: relative;
+    right: -130px;
+    top: 15px;
+}
+
+.d1-mindcontent .m2 span {
+    position: relative;
+    right: -300px;
+    top: 12px;
+}
+
+.d1-mindcontent .m3 {
+    position: relative;
+    right: -180px;
+    top: 20px;
+}
+
+.icons {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+    font-size: 25px;
+}
+
+.icons span {
+    background: #d8f2e6;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.d1-mindcontent p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    color: #555;
+    max-width: 85%;
+}
+
+/* right image */
+.d1-mindimage {
+    position: relative;
+    left: -80px;
+    flex: 1;
+}
+
+.d1-mindimage img {
+    position: relative;
+    left: 70px;
+    max-width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    clip-path: polygon(100% 97.25%, 100% 97.25%, 99.966% 97.696%, 99.866% 98.119%, 99.707% 98.513%, 99.493% 98.874%, 99.231% 99.194%, 98.925% 99.469%, 98.581% 99.693%, 98.204% 99.86%, 97.8% 99.964%, 97.374% 100%, 2.626% 100%, 2.626% 100%, 2.2% 99.964%, 1.796% 99.86%, 1.419% 99.693%, 1.075% 99.469%, 0.769% 99.194%, 0.507% 98.874%, 0.293% 98.513%, 0.134% 98.119%, 0.034% 97.696%, 0% 97.25%, 0% 54.459%, 0% 54.459%, 0.034% 54.013%, 0.134% 53.59%, 0.293% 53.195%, 0.507% 52.835%, 0.769% 52.514%, 1.075% 52.239%, 1.419% 52.016%, 1.796% 51.849%, 2.2% 51.745%, 2.626% 51.709%, 19.223% 51.709%, 19.223% 51.709%, 19.649% 51.673%, 20.053% 51.568%, 20.43% 51.402%, 20.774% 51.178%, 21.08% 50.903%, 21.342% 50.583%, 21.556% 50.222%, 21.715% 49.828%, 21.814% 49.404%, 21.849% 48.958%, 21.849% 40.817%, 21.849% 40.817%, 21.883% 40.371%, 21.983% 39.948%, 22.142% 39.553%, 22.355% 39.193%, 22.618% 38.872%, 22.924% 38.597%, 23.268% 38.373%, 23.645% 38.207%, 24.049% 38.102%, 24.475% 38.066%, 30.357% 38.066%, 30.357% 38.066%, 30.783% 38.03%, 31.187% 37.926%, 31.564% 37.759%, 31.908% 37.536%, 32.214% 37.261%, 32.477% 36.94%, 32.69% 36.58%, 32.849% 36.185%, 32.949% 35.762%, 32.983% 35.316%, 32.983% 27.175%, 32.983% 27.175%, 32.949% 26.728%, 32.849% 26.305%, 32.69% 25.911%, 32.477% 25.55%, 32.214% 25.23%, 31.908% 24.955%, 31.564% 24.731%, 31.187% 24.564%, 30.783% 24.46%, 30.357% 24.424%, 16.282% 24.424%, 16.282% 24.424%, 15.856% 24.388%, 15.451% 24.284%, 15.075% 24.117%, 14.731% 23.893%, 14.425% 23.619%, 14.162% 23.298%, 13.949% 22.938%, 13.789% 22.543%, 13.69% 22.12%, 13.655% 21.674%, 13.655% 16.173%, 13.655% 16.173%, 13.621% 15.727%, 13.522% 15.303%, 13.362% 14.909%, 13.149% 14.548%, 12.886% 14.228%, 12.58% 13.953%, 12.236% 13.729%, 11.859% 13.562%, 11.455% 13.458%, 11.029% 13.422%, 2.626% 13.422%, 2.626% 13.422%, 2.2% 13.386%, 1.796% 13.282%, 1.419% 13.115%, 1.075% 12.892%, 0.769% 12.617%, 0.507% 12.296%, 0.293% 11.936%, 0.134% 11.541%, 0.034% 11.118%, 0% 10.672%, 0% 2.75%, 0% 2.75%, 0.034% 2.304%, 0.134% 1.881%, 0.293% 1.486%, 0.507% 1.126%, 0.769% 0.806%, 1.075% 0.531%, 1.419% 0.307%, 1.796% 0.14%, 2.2% 0.036%, 2.626% 0%, 97.374% 0%, 97.374% 0%, 97.8% 0.036%, 98.204% 0.14%, 98.581% 0.307%, 98.925% 0.531%, 99.231% 0.806%, 99.493% 1.126%, 99.707% 1.486%, 99.866% 1.881%, 99.966% 2.304%, 100% 2.75%, 100% 97.25%);
+}
+
+@media (max-width:1400px) {
+    .d1-mindcontent h2 {
+        font-size: 50px;
+    }
+
+    .m2::after {
+        font-size: 35px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .tag {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:1200px) {
+    .d1-mindcontent {
+        right: -4%;
+    }
+
+    .d1-mindcontent h2 {
+        font-size: 45px;
+        right: -10%;
+    }
+
+    .m2::after {
+        left: 10px
+    }
+
+    .m2::before {
+        left: 140px;
+    }
+
+    .d1-mindcontent .m1 {
+        right: -140px;
+    }
+
+    .d1-mindcontent .m2 span {
+        right: -190px;
+    }
+
+    .d1-mindcontent .m3 {
+        right: -175px;
+        top: 12px;
+    }
+
+
+    .tag {
+        font-size: 20px;
+    }
+
+    .d1-mindcontentn p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:991px) {
+    .d1-mindbox {
+        padding: 0;
+    }
+
+    .d1-mindcontent {
+        right: 10%;
+    }
+
+    .d1-mindcontent .m1 {
+        right: -220px;
+        top: 14px;
+    }
+
+    .d1-mindcontent .m1 {
+        right: -220px;
+        top: 14px;
+    }
+
+    .d1-mindcontent .m2 span {
+        right: -250px;
+        top: 10px;
+    }
+
+    .d1-mindcontent .m3 {
+        right: -250px;
+        top: 25px;
+    }
+
+    .d1-mindcontent h2 {
+        font-size: 35px;
+        right: -10%;
+    }
+
+    .m2::before {
+        left: 220px;
+        top: 15px;
+    }
+
+    .m2::after {
+        font-size: 30px;
+        width: 45px;
+        height: 45px;
+        left: 90px;
+        top: 80%;
+    }
+
+    .tag {
+        font-size: 16px;
+        right: -120px;
+        top: 10px;
+    }
+
+    .d1-mindcontent p {
+        position: relative;
+        font-size: 16px;
+        right: -90px;
+    }
+
+    .icons {
+        gap: 20px;
+        font-size: 20px;
+        right: -25%;
+    }
+
+    .d1-mindimage img {
+        height: 420px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .d1-mindcontent {
+        right: 30%;
+    }
+
+    .icons {
+        right: -80%;
+        top: 15px;
+    }
+
+    .d1-mindcontent .m1 {
+        right: -220px;
+        top: 30px;
+    }
+
+
+    .d1-mindcontent .m2 span {
+        right: -240px;
+        top: 35px;
+    }
+
+    .d1-mindcontent .m3 {
+        right: -245px;
+        top: 50px;
+        margin-bottom: 45px;
+    }
+
+    .d1-mindcontent p {
+        right: -175px;
+    }
+
+    .m2::before {
+        left: 228px;
+        top: 40px;
+    }
+
+    .m2::after {
+        left: 155px;
+        top: 55px;
+    }
+
+    .tag {
+        right: -175px;
+        top: 5px;
+    }
+}
+
+@media (max-width:576px) {
+    .d1-mindcontent {
+        right: 30%;
+    }
+
+    .d1-mindcontent h2 {
+        font-size: 40px;
+    }
+
+    .d1-mindcontent .m1 {
+        right: -220px;
+        top: 30px;
+    }
+
+    .d1-mindcontent .m2 span {
+        right: -250px;
+        top: 25px;
+    }
+
+    .m2::before {
+        left: 230px;
+        top: 30px
+    }
+
+    .m2::after {
+        left: 155px;
+        top: 50px;
+    }
+
+    .icons {
+        right: -75%;
+        top: 20px;
+    }
+}
+
+@media (max-width:545px) {
+    .d1-mindbox {
+        flex-direction: column;
+    }
+
+    .d1-mindimage {
+        order: 2;
+    }
+
+    .d1-mindcontent {
+        order: 1;
+        max-width: 100%;
+        /* overflow: hidden; */
+    }
+
+    .d1-mindcontent .m1 {
+        right: -250px;
+    }
+
+    .icons {
+        right: -65%;
+        top: 20px;
+    }
+}
+
+
+
+
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6faf8;
+} */
+
+/* main layout */
+/* .d1-mindbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+} */
+
+/* left content */
+/* .d1-mindcontent {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+}
+
+.tag {
+    position: relative;
+    right: 0px;
+    top: -10px;
+    font-size: 30px;
+    color: #3ba57c;
+}
+
+.m2 {
+    position: relative;
+    padding-left: 10px;
+    font-size: 26px;
+    margin: 0;
+} */
+
+/* vertical line */
+/* .m2::before {
+    content: "";
+    position: absolute;
+    left: 195px;
+    top: 5px;
+    height: 80%;
+    width: 2px;
+    background: #3ba57c;
+} */
+
+/* icon circle */
+/* .m2::after {
+    content: "\f6c4";
+    font-family: "bootstrap-icons";
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e6f5ee;
+    color: #3ba57c;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.m2 span {
+    color: #3ba57c;
+}
+
+.d1-mindcontent h2 {
+    position: relative;
+    right: 10px;
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.d1-mindcontent h2 span {
+    color: #3ba57c;
+}
+
+.d1-mindcontent .m1 {
+    position: relative;
+    right: -130px;
+    top: 6px;
+}
+
+.d1-mindcontent .m2 span {
+    position: relative;
+    right: -260px;
+    top: -2px;
+}
+
+.d1-mindcontent .m3 {
+    position: relative;
+    right: -180px;
+    top: 0;
+}
+
+.icons {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+    font-size: 25px;
+}
+
+.icons span {
+    background: #d8f2e6;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.d1-mindcontent p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    color: #555;
+    max-width: 85%;
+} */
+
+/* right image */
+/* .d1-mindimage {
+    position: relative;
+    left: -80px;
+    flex: 1;
+}
+
+.d1-mindimage img {
+    position: relative;
+    left: 70px;
+    max-width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    clip-path: polygon(100% 97.25%, 100% 97.25%, 99.966% 97.696%, 99.866% 98.119%, 99.707% 98.513%, 99.493% 98.874%, 99.231% 99.194%, 98.925% 99.469%, 98.581% 99.693%, 98.204% 99.86%, 97.8% 99.964%, 97.374% 100%, 2.626% 100%, 2.626% 100%, 2.2% 99.964%, 1.796% 99.86%, 1.419% 99.693%, 1.075% 99.469%, 0.769% 99.194%, 0.507% 98.874%, 0.293% 98.513%, 0.134% 98.119%, 0.034% 97.696%, 0% 97.25%, 0% 54.459%, 0% 54.459%, 0.034% 54.013%, 0.134% 53.59%, 0.293% 53.195%, 0.507% 52.835%, 0.769% 52.514%, 1.075% 52.239%, 1.419% 52.016%, 1.796% 51.849%, 2.2% 51.745%, 2.626% 51.709%, 19.223% 51.709%, 19.223% 51.709%, 19.649% 51.673%, 20.053% 51.568%, 20.43% 51.402%, 20.774% 51.178%, 21.08% 50.903%, 21.342% 50.583%, 21.556% 50.222%, 21.715% 49.828%, 21.814% 49.404%, 21.849% 48.958%, 21.849% 40.817%, 21.849% 40.817%, 21.883% 40.371%, 21.983% 39.948%, 22.142% 39.553%, 22.355% 39.193%, 22.618% 38.872%, 22.924% 38.597%, 23.268% 38.373%, 23.645% 38.207%, 24.049% 38.102%, 24.475% 38.066%, 30.357% 38.066%, 30.357% 38.066%, 30.783% 38.03%, 31.187% 37.926%, 31.564% 37.759%, 31.908% 37.536%, 32.214% 37.261%, 32.477% 36.94%, 32.69% 36.58%, 32.849% 36.185%, 32.949% 35.762%, 32.983% 35.316%, 32.983% 27.175%, 32.983% 27.175%, 32.949% 26.728%, 32.849% 26.305%, 32.69% 25.911%, 32.477% 25.55%, 32.214% 25.23%, 31.908% 24.955%, 31.564% 24.731%, 31.187% 24.564%, 30.783% 24.46%, 30.357% 24.424%, 16.282% 24.424%, 16.282% 24.424%, 15.856% 24.388%, 15.451% 24.284%, 15.075% 24.117%, 14.731% 23.893%, 14.425% 23.619%, 14.162% 23.298%, 13.949% 22.938%, 13.789% 22.543%, 13.69% 22.12%, 13.655% 21.674%, 13.655% 16.173%, 13.655% 16.173%, 13.621% 15.727%, 13.522% 15.303%, 13.362% 14.909%, 13.149% 14.548%, 12.886% 14.228%, 12.58% 13.953%, 12.236% 13.729%, 11.859% 13.562%, 11.455% 13.458%, 11.029% 13.422%, 2.626% 13.422%, 2.626% 13.422%, 2.2% 13.386%, 1.796% 13.282%, 1.419% 13.115%, 1.075% 12.892%, 0.769% 12.617%, 0.507% 12.296%, 0.293% 11.936%, 0.134% 11.541%, 0.034% 11.118%, 0% 10.672%, 0% 2.75%, 0% 2.75%, 0.034% 2.304%, 0.134% 1.881%, 0.293% 1.486%, 0.507% 1.126%, 0.769% 0.806%, 1.075% 0.531%, 1.419% 0.307%, 1.796% 0.14%, 2.2% 0.036%, 2.626% 0%, 97.374% 0%, 97.374% 0%, 97.8% 0.036%, 98.204% 0.14%, 98.581% 0.307%, 98.925% 0.531%, 99.231% 0.806%, 99.493% 1.126%, 99.707% 1.486%, 99.866% 1.881%, 99.966% 2.304%, 100% 2.75%, 100% 97.25%);
+}
+
+@media (max-width:1400px) {
+    .d1-mindcontent h2 {
+        font-size: 50px;
+    }
+
+    .m2::after {
+        font-size: 35px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .tag {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:1200px) {
+    .d1-mindcontent {
+        right: -4%;
+    }
+
+    .d1-mindcontent h2 {
+        font-size: 45px;
+        right: -10%;
+    }
+
+    .m2::after {
+        left: 10px
+    }
+
+    .m2::before {
+        left: 140px;
+    }
+
+    .d1-mindcontent .m1 {
+        right: -140px;
+    }
+
+    .d1-mindcontent .m2 span {
+        right: -190px;
+    }
+
+    .d1-mindcontent .m3 {
+        right: -175px;
+        top: 12px;
+    }
+
+
+    .tag {
+        font-size: 20px;
+    }
+
+    .d1-mindcontentn p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:991px) {
+    .d1-mindbox {
+        padding: 0;
+    }
+
+    .d1-mindcontent {
+        right: 10%;
+    }
+
+    .d1-mindcontent .m1 {
+        right: -220px;
+        top: 14px;
+    }
+
+    .d1-mindcontent .m1 {
+        right: -220px;
+        top: 14px;
+    }
+
+    .d1-mindcontent .m2 span {
+        right: -250px;
+        top: 10px;
+    }
+
+    .d1-mindcontent .m3 {
+        right: -250px;
+        top: 25px;
+    }
+
+    .d1-mindcontent h2 {
+        font-size: 35px;
+        right: -10%;
+    }
+
+    .m2::before {
+        left: 220px;
+        top: 15px;
+    }
+
+    .m2::after {
+        font-size: 30px;
+        width: 45px;
+        height: 45px;
+        left: 90px;
+        top: 80%;
+    }
+
+    .tag {
+        font-size: 16px;
+        right: -120px;
+        top: 10px;
+    }
+
+    .d1-mindcontent p {
+        position: relative;
+        font-size: 16px;
+        right: -90px;
+    }
+
+    .icons {
+        gap: 20px;
+        font-size: 20px;
+        right: -25%;
+    }
+
+    .d1-mindimage img {
+        height: 420px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .d1-mindcontent {
+        right: 30%;
+    }
+
+    .icons {
+        right: -65%;
+    }
+
+    .d1-mindcontent .m1 {
+        right: -225px;
+        top: 15px;
+    }
+
+
+    .d1-mindcontent .m2 span {
+        right: -250px;
+        top: 18px;
+    }
+
+    .d1-mindcontent .m3 {
+        right: -250px;
+        top: 35px;
+        margin-bottom: 40px;
+    }
+
+    .d1-mindcontent p {
+        right: -175px;
+    }
+
+    .m2::before {
+        left: 230px;
+        top: 20px;
+    }
+
+    .m2::after {
+        left: 155px;
+        top: 40px;
+    }
+
+    .tag {
+        right: -175px;
+        top: 5px;
+    }
+}
+
+@media (max-width:576px) {
+    .d1-mindcontent {
+        right: 30%;
+    }
+
+    .d1-mindcontent h2 {
+        font-size: 40px;
+    }
+
+    .d1-mindcontent .m1 {
+        right: -220px;
+        top: 30px;
+    }
+
+    .d1-mindcontent .m2 span {
+        right: -250px;
+        top: 25px;
+    }
+
+    .m2::before {
+        left: 230px;
+        top: 30px
+    }
+
+    .m2::after {
+        left: 155px;
+        top: 50px;
+    }
+
+    .icons {
+        right: -75%;
+        top: 20px;
+    }
+}
+ */

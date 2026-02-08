@@ -1,0 +1,593 @@
+.d2-section {
+    width: 100%;
+    padding: 50px 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 64%)),
+        url("/UI-UX/assets/image/taxi.webp") center/cover no-repeat;
+    color: #fff;
+}
+
+.d2-top-icon {
+    font-size: 55px;
+    color: #FFC000;
+}
+
+.line {
+    height: 1px;
+    background-color: #dfd5d5;
+    width: 8%;
+    position: relative;
+    left: 46%;
+    top: -25px;
+}
+
+.d2-subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #FFC000;
+    margin-top: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.d2-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* cards */
+
+.d2-card {
+    border: 2px solid #FFC000;
+    background: #fff;
+    width: 100%;
+    color: #333;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 6px;
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 230px
+}
+
+.d2-card::before {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    top: -40px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(9.131% 15.038%, 9.131% 15.038%, 9.456% 12.356%, 9.828% 9.901%, 10.242% 7.686%, 10.695% 5.725%, 11.182% 4.03%, 11.698% 2.614%, 12.241% 1.49%, 12.806% 0.671%, 13.388% 0.17%, 13.983% 0%, 87.198% 0%, 87.198% 0%, 87.827% 0.19%, 88.441% 0.749%, 89.034% 1.66%, 89.601% 2.909%, 90.139% 4.479%, 90.641% 6.353%, 91.104% 8.516%, 91.522% 10.952%, 91.89% 13.645%, 92.204% 16.579%, 100% 100%, 0% 100%, 9.131% 15.038%);
+    transform: translateX(-50%);
+    width: 85%;
+    height: 40px;
+    background: #FFC000;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+
+.d2-card.head1::before {
+    content: "Address Pickup";
+}
+
+.d2-card.head2::before {
+    content: "Taxi Tours";
+}
+
+.d2-card.head3::before {
+    content: "Airport Transfer";
+}
+
+.d2-icon {
+    font-size: 36px;
+    color: #FFC000;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.d2-card p {
+    font-family: "Lato" sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+}
+
+/* button */
+
+.d2-btn {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 50%;
+    left: 25%;
+    padding: 8px 22px;
+    border: 2px solid #FFC000;
+    color: #FFC000;
+    border-radius: 30px;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.d2-btn:hover {
+    background: #FFC000;
+    color: #000;
+}
+
+@media (max-width:1400px) {
+    .d2-section {
+        padding: 50px 150px;
+    }
+
+    .d2-title {
+        font-size: 35px;
+    }
+
+    .line {
+        height: 2px;
+    }
+
+    .d2-top-icon {
+        font-size: 50px;
+    }
+
+    .d2-card {
+        padding: 25px;
+    }
+
+    .d2-subtitle {
+        font-size: 15px;
+    }
+
+    .d2-card p {
+        font-size: 18px;
+    }
+
+    .d2-card::before {
+        font-size: 24px;
+    }
+
+    .d2-btn {
+        top: 40px;
+        left: 25%;
+        font-size: 12px;
+    }
+
+}
+
+
+@media (max-width:1200px) {
+    .d2-section {
+        padding: 60px 60px
+    }
+
+    .d2-card {
+
+        padding: 25px
+    }
+
+    .d2-title {
+        font-size: 30px;
+    }
+
+    .d2-card p {
+        font-size: 17px;
+    }
+
+    .d2-top-icon {
+        font-size: 45px;
+    }
+
+    .d2-btn {
+        top: 42px;
+    }
+
+    .d2-card::before {
+        font-size: 22px
+    }
+}
+
+@media (max-width:991px) {
+    .d2-section {
+        padding: 60px 5px;
+    }
+
+    .d2-card {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .d2-card::before {
+        font-size: 19px;
+    }
+
+    .d2-card p {
+        font-size: 16px;
+    }
+
+    .d2-btn {
+        top: 20px;
+        left: 25%;
+        font-size: 11px
+    }
+}
+
+@media (max-width:768px) {
+    .d2-section {
+        padding: 25px 25px;
+    }
+
+    .d2-card::before {
+        font-size: 20px;
+    }
+
+    .d2-card p {
+        font-size: 15px
+    }
+
+    .d2-card {
+        padding: 11px;
+    }
+
+    .d2-box {
+        row-gap: 5rem;
+    }
+
+    .d2-top-icon {
+        font-size: 50px;
+    }
+
+    .d2-btn {
+        top: 30px;
+        padding: 8px;
+        left: 25%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:576px) {
+    .d2-section {
+        padding: 15px 80px;
+    }
+
+    .d2-title {
+        font-size: 25px;
+    }
+
+    .d2-subtitle {
+        font-size: 12px;
+    }
+
+    .line {
+        width: 30%;
+        left: 35%;
+    }
+
+    .d2-top-icon {
+        font-size: 60px;
+
+    }
+
+    .d2-card {
+        padding: 8px;
+    }
+
+    .d2-card::before {
+        font-size: 18px;
+    }
+
+    .d2-icon {
+        font-size: 50px;
+    }
+
+    .d2-card p {
+        font-size: 14px;
+    }
+
+    .d2-btn {
+        top: 15px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.d2-section {
+    width: 100%;
+    padding: 50px 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 64%)),
+        url("/designbox12/assets/image/taxi.webp") center/cover no-repeat;
+    color: #fff;
+}
+
+.d2-top-icon {
+    font-size: 55px;
+    color: #FFC000;
+}
+
+.line {
+    height: 1px;
+    background-color: #dfd5d5;
+    width: 8%;
+    position: relative;
+    left: 46%;
+    top: -25px;
+}
+
+.d2-subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #FFC000;
+    margin-top: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.d2-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+} */
+
+
+/* cards */
+
+/* .d2-card {
+    background: #fff;
+    width: 100%;
+    color: #333;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 6px;
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 250px
+}
+
+.d2-card::before {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    top: -40px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(9.131% 15.038%, 9.131% 15.038%, 9.456% 12.356%, 9.828% 9.901%, 10.242% 7.686%, 10.695% 5.725%, 11.182% 4.03%, 11.698% 2.614%, 12.241% 1.49%, 12.806% 0.671%, 13.388% 0.17%, 13.983% 0%, 87.198% 0%, 87.198% 0%, 87.827% 0.19%, 88.441% 0.749%, 89.034% 1.66%, 89.601% 2.909%, 90.139% 4.479%, 90.641% 6.353%, 91.104% 8.516%, 91.522% 10.952%, 91.89% 13.645%, 92.204% 16.579%, 100% 100%, 0% 100%, 9.131% 15.038%);
+    transform: translateX(-50%);
+    width: 85%;
+    height: 40px;
+    background: #FFC000;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+
+.d2-card.head1::before {
+    content: "Address Pickup";
+}
+
+.d2-card.head2::before {
+    content: "Taxi Tours";
+}
+
+.d2-card.head3::before {
+    content: "Airport Transfer";
+}
+
+.d2-icon {
+    font-size: 36px;
+    color: #FFC000;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.d2-card p {
+    font-family: "Lato" sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+} */
+
+/* button */
+
+/* .d2-btn {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 60%;
+    left: 65px;
+    padding: 8px 22px;
+    border: 2px solid #FFC000;
+    color: #FFC000;
+    border-radius: 30px;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.d2-btn:hover {
+    background: #FFC000;
+    color: #000;
+}
+
+@media (max-width:1400px) {
+    .d2-section {
+        padding: 50px 150px;
+    }
+
+    .d2-title {
+        font-size: 35px;
+    }
+
+    .line {
+        height: 2px;
+    }
+
+    .d2-top-icon {
+        font-size: 50px;
+    }
+
+    .d2-card {
+        padding: 25px;
+    }
+
+    .d2-subtitle {
+        font-size: 15px;
+    }
+
+    .d2-card p {
+        font-size: 16px;
+    }
+
+    .d2-card::before {
+        font-size: 24px;
+    }
+
+    .d2-btn {
+        top: 40px;
+        left: 50px;
+    }
+
+}
+
+
+@media (max-width:1200px) {
+    .d2-section {
+        padding: 60px 60px
+    }
+
+    .d2-card {
+        height: auto;
+        padding: 12px;
+    }
+
+    .d2-title {
+        font-size: 30px;
+    }
+
+    .d2-card p {
+        font-size: 16px;
+    }
+
+    .d2-top-icon {
+        font-size: 45px;
+    }
+
+    .d2-btn {
+        top: 26px;
+    }
+
+    .d2-card::before {
+        font-size: 22px
+    }
+}
+
+@media (max-width:991px) {
+    .d2-section {
+        padding: 60px 5px;
+    }
+
+    .d2-card {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .d2-card::before {
+        font-size: 19px;
+    }
+
+    .d2-card p {
+        font-size: 17px;
+    }
+
+    .d2-btn {
+        top: 30px;
+        left: 40px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:768px) {
+    .d2-section {
+        padding: 80px 140px;
+    }
+
+    .d2-card::before {
+        font-size: 25px;
+    }
+
+    .d2-card p {
+        font-size: 20px
+    }
+
+    .d2-box {
+        row-gap: 5rem;
+    }
+
+    .d2-top-icon {
+        font-size: 60px;
+    }
+
+    .d2-btn {
+        top: 30px;
+        padding: 8px;
+        left: 20%;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:576px) {
+    .d2-section {
+        padding: 35px 15px;
+    }
+
+    .d2-title {
+        font-size: 30px;
+    }
+
+    .line {
+        width: 30%;
+        left: 35%;
+    }
+
+    .d2-top-icon {
+        font-size: 50px;
+    }
+
+    .d2-card::before {
+        font-size: 18px;
+    }
+
+    .d2-icon {
+        font-size: 30px;
+    }
+
+    .d2-card p {
+        font-size: 16px
+    }
+
+    .d2-btn {
+        font-size: 11px;
+    }
+} */
