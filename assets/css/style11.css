@@ -7,7 +7,7 @@
     overflow: hidden;
     background:
         linear-gradient(rgb(254 254 254 / 55%), rgb(241 234 234 / 85%)),
-        url(/UI-UX/assets/image/pic1.avif);
+        url(/Blogs/assets/image/pic1.avif);
     background-size: cover;
     min-height: 400px;
 }
@@ -58,7 +58,7 @@
 .d4-box:hover {
     background:
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(/UI-UX/assets/image/pic1.avif);
+        url(/Blogs/assets/image/pic1.avif);
     background-size: cover;
 }
 
