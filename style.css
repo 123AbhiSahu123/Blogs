@@ -1,0 +1,25 @@
+h2 {
+    background-color: gray;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+p {
+
+    background-color: aqua;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+p:hover {
+    background-color: blueviolet;
+}
+h2:hover {
+    background-color: brown;
+}
+h1 {
+    color: black;
+    text-align: center;
+    text-decoration: double;
+    font-weight: bold;
+}
